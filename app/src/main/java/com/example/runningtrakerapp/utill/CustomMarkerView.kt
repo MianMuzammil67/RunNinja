@@ -13,7 +13,7 @@ import java.util.Calendar
 import java.util.Locale
 
 class CustomMarkerView(
-    val runs: List<Run>,
+    private val runs: List<Run>,
     c: Context,
     layoutId: Int
 ) : MarkerView(c, layoutId) {

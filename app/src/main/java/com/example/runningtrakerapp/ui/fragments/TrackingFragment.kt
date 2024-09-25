@@ -14,7 +14,6 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.runningtrakerapp.R
 import com.example.runningtrakerapp.R.layout
-import com.example.runningtrakerapp.databinding.FragmentTrackingBinding
 import com.example.runningtrakerapp.databinding.FragmentTrakingBinding
 import com.example.runningtrakerapp.db.Run
 import com.example.runningtrakerapp.services.Polyline
@@ -59,7 +58,7 @@ class TrackingFragment : Fragment(layout.fragment_traking) {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        setHasOptionsMenu(true)
+//        setHasOptionsMenu(true)
         return super.onCreateView(inflater, container, savedInstanceState)
     }
 
@@ -132,7 +131,7 @@ class TrackingFragment : Fragment(layout.fragment_traking) {
         this.isTracking = isTracking
         if (!isTracking && curTimeInMillis > 0L) {
 //            binding.btnToggleRun.text = "Start"
-            binding.btnToggleRun.text = "Pause"
+            binding.btnToggleRun.text = "start"
             binding.btnFinishRun.visibility = View.VISIBLE
         } else if (!isTracking) {
             this.menu?.getItem(0)?.isVisible = true

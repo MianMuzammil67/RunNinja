@@ -15,7 +15,6 @@ import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
 import androidx.lifecycle.LifecycleService
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Observer
 import com.example.runningtrakerapp.R
 import com.example.runningtrakerapp.utill.Constants.ACTION_PAUSE_SERVICE
 import com.example.runningtrakerapp.utill.Constants.ACTION_START_OR_RESUME_SERVICE
@@ -69,10 +68,14 @@ class TrackingServices : LifecycleService() {
         curNotificationBuilder = baseNotificationBuilder
 //        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
 
-        isTracking.observe(this, Observer {
+        isTracking.observe(this) {
             updateLocationTracking(it)
             updateNotificationTrackingState(it)
-        })
+        }
+//        isTracking.observe(this, Observer {
+//            updateLocationTracking(it)
+//            updateNotificationTrackingState(it)
+//        })
     }
 
     private fun postInitialValues() {
@@ -97,6 +100,7 @@ class TrackingServices : LifecycleService() {
                         startForegroundService()
                     }
                 }
+
                 ACTION_PAUSE_SERVICE -> {
                     pauseService()
                     Log.d("TrackingService", "PAUSE_SERVICE")
@@ -148,7 +152,7 @@ class TrackingServices : LifecycleService() {
         if (isTracking) {
             if (TrackingUtility.hasLocationPermissions(this)) {
 
-                var request = LocationRequest.Builder(
+                val request = LocationRequest.Builder(
                     Priority.PRIORITY_HIGH_ACCURACY,
                     LOCATION_UPDATE_INTERVAL
                 )
@@ -212,13 +216,13 @@ class TrackingServices : LifecycleService() {
 
         startForeground(NOTIFICATION_ID, baseNotificationBuilder.build())
 
-        timeRunInSeconds.observe(this, Observer {
+        timeRunInSeconds.observe(this) {
             if (!serviceKilled) {
                 val notification = curNotificationBuilder
                     .setContentText(TrackingUtility.getFormattedStopWatchTime(it * 1000L))
                 notificationManager.notify(NOTIFICATION_ID, notification.build())
             }
-        })
+        }
 
     }
 
@@ -250,8 +254,8 @@ class TrackingServices : LifecycleService() {
         }
 
         if (!serviceKilled) {
-        val notificationManager =
-            getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            val notificationManager =
+                getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 //        if (!serviceKilled) {
             notificationManager.notify(
                 NOTIFICATION_ID,

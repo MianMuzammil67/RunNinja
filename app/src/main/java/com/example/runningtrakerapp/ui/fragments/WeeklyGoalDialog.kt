@@ -7,11 +7,9 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.lifecycleScope
 import com.example.runningtrakerapp.databinding.WeaklyGaolDialougeBinding
 import com.example.runningtrakerapp.ui.viewModel.WeekGoalViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.launch
 
 
 @AndroidEntryPoint
@@ -24,7 +22,7 @@ class WeeklyGoalDialog : DialogFragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = WeaklyGaolDialougeBinding.inflate(inflater, container, false)
         return binding.root
     }

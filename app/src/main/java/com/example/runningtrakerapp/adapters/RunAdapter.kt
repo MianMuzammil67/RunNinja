@@ -6,10 +6,8 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.runningtrakerapp.databinding.ItemRunBinding
 import com.example.runningtrakerapp.databinding.RunLayoutBinding
 import com.example.runningtrakerapp.db.Run
-import com.example.runningtrakerapp.utill.TrackingUtility
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale

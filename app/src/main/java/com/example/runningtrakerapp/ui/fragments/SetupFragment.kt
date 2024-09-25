@@ -9,7 +9,6 @@ import androidx.navigation.fragment.findNavController
 import com.example.runningtrakerapp.R
 import com.example.runningtrakerapp.databinding.FragmentSetupBinding
 import com.example.runningtrakerapp.utill.Constants.KEY_FIRST_TIME_TOGGLE
-import com.example.runningtrakerapp.utill.Constants.KEY_Height
 import com.example.runningtrakerapp.utill.Constants.KEY_NAME
 import com.example.runningtrakerapp.utill.Constants.KEY_WEIGHT
 import com.google.android.material.snackbar.Snackbar
