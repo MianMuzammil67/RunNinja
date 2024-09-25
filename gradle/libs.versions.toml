@@ -1,0 +1,83 @@
+[versions]
+agp = "8.5.0"
+glide = "4.16.0"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.0"
+espressoCore = "3.6.0"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.0"
+constraintlayout = "2.1.4"
+#   Room Database
+mpandroidchart = "v3.1.0"
+#   Navigation graph
+navigationFragmentKtx = "2.7.7"
+nav_version = "2.7.7"
+
+
+room_version = "2.6.1"
+#   ksp
+ksp = "1.9.0-1.0.13"
+#   Hillt
+hilt = "2.49"
+
+
+playServicesMaps = "19.0.0"
+playServicesLocation = "21.3.0"
+
+
+# Pernitions
+easypermissions = "3.0.0"
+lifecycleService = "2.8.4"
+
+[libraries]
+
+androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
+
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+#   Room Database
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room_version" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room_version" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room_version" }
+
+#   dagger hillt
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+
+#   Glide
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+#   Easy Permission
+easypermissions = { module = "pub.devrel:easypermissions", version.ref = "easypermissions" }
+#   MP Android Chart
+mpandroidchart = { group = "com.github.PhilJay", name = "MPAndroidChart", version.ref = "mpandroidchart" }
+#   Navigation graph
+androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationFragmentKtx" }
+
+play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
+androidx-lifecycle-service = { group = "androidx.lifecycle", name = "lifecycle-service", version.ref = "lifecycleService" }
+
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+#   hillt
+google-dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+#   KSp
+devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+#
+navigation-safe-args= { id = "androidx.navigation.safeargs.kotlin", version.ref = "nav_version" }
+
+

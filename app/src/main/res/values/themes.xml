@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RunningTrakerApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/primaryColour</item>
+         <item name="colorPrimaryDark">@color/primaryColour</item>
+         <item name="colorAccent">@color/primaryColour</item>
+        <item name="android:statusBarColor">@color/blue</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+
+    </style>
+
+    <style name="Theme.RunningTrakerApp" parent="Base.Theme.RunningTrakerApp" />
+
+</resources>
