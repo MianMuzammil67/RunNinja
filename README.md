@@ -38,8 +38,8 @@ The app follows the **MVVM (Model-View-ViewModel)** architecture, ensuring a cle
 
 *(Add relevant screenshots here)* -->
 
-## 🔧 Setup
+<!-- ## 🔧 Setup
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/MianMuzammil67/RunNinja-app.git
+   git clone https://github.com/MianMuzammil67/RunNinja-app.git -->
