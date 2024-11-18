@@ -50,11 +50,8 @@ class RunAdapter : RecyclerView.Adapter<RunAdapter.ViewHolder>() {
             tvDistance.text = "${currentRun.distanceInMeters}m"
 //            tvDistance.text = "${currentRun.distanceInMeters / 1000}km"
 //            tvTime.text = TrackingUtility.getFormattedStopWatchTime(currentRun.timeInMillis)
-
         }
-
     }
-
     private var _itemClicked: ((Run) -> Unit)? = null
     fun itemclickedlistener(listener: (Run) -> Unit) {
         _itemClicked = listener

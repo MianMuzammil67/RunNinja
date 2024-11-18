@@ -223,7 +223,6 @@ class TrackingServices : LifecycleService() {
                 notificationManager.notify(NOTIFICATION_ID, notification.build())
             }
         }
-
     }
 
     private fun pauseService() {
@@ -263,8 +262,6 @@ class TrackingServices : LifecycleService() {
             )
         }
     }
-
-
     fun createPendingIntent(isTracking: Boolean): PendingIntent {
         val intent = Intent(this, TrackingServices::class.java).apply {
             action = if (isTracking) ACTION_PAUSE_SERVICE else ACTION_START_OR_RESUME_SERVICE

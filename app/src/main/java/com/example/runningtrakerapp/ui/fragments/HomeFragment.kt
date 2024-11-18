@@ -169,8 +169,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 //        }
 */
 
-        runAdapter.itemclickedlistener {
-            val action = HomeFragmentDirections.actionRunFragmentToRunDetailFragment(it)
+        runAdapter.itemclickedlistener {run ->
+            val action = HomeFragmentDirections.actionRunFragmentToRunDetailFragment(run)
             findNavController().navigate(action)
         }
 
