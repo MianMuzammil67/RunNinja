@@ -48,8 +48,6 @@ class RunAdapter : RecyclerView.Adapter<RunAdapter.ViewHolder>() {
             tvAvgSpeed.text = "${currentRun.avgSpeedInKMH}km/h"
             tvCalories.text = "${currentRun.caloriesBurned}kcal"
             tvDistance.text = "${currentRun.distanceInMeters}m"
-//            tvDistance.text = "${currentRun.distanceInMeters / 1000}km"
-//            tvTime.text = TrackingUtility.getFormattedStopWatchTime(currentRun.timeInMillis)
         }
     }
     private var _itemClicked: ((Run) -> Unit)? = null
