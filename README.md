@@ -34,9 +34,20 @@ The app follows the **MVVM (Model-View-ViewModel)** architecture, ensuring a cle
 3. **End the Run**: When you're done, the app will calculate all the metrics (steps, calories, avg speed, etc.) and store them.
 4. **Set Weekly Goals**: In the settings, you can set a weekly running goal and track your progress throughout the week.
 
-<!-- ## 📸 Screenshots
+## 📸 Screenshots
 
-*(Add relevant screenshots here)* -->
+
+<img src="https://github.com/user-attachments/assets/734fed1e-5db4-47ee-929f-edacbb6a83f3" alt="Screenshot 1" width="250"/>
+
+<img src="https://github.com/user-attachments/assets/1cbb5dc8-4bee-4f28-9588-cce539d19319" alt="Screenshot 2" width="250"/>
+
+<img src="https://github.com/user-attachments/assets/466595cc-061b-4c6b-b8a9-4a7037ec9246" alt="Screenshot 3" width="250"/>
+
+<img src="https://github.com/user-attachments/assets/b67d484f-37f5-4527-9b2d-321872c9a609" alt="Screenshot 4" width="250"/>
+
+<img src="https://github.com/user-attachments/assets/0fe53825-a3b4-4abd-8382-85a7d54fd127" alt="Screenshot 5" width="250"/>
+
+
 
 <!-- ## 🔧 Setup
 
