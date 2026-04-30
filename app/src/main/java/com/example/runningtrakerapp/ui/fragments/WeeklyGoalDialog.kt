@@ -17,7 +17,7 @@ class WeeklyGoalDialog : DialogFragment() {
 
     private var _binding: WeaklyGaolDialougeBinding? = null
     private val binding get() = _binding!!
-    private val weekGoalViewModel: WeekGoalViewModel by viewModels()
+    private val weekGoalViewModel: WeekGoalViewModel by activityViewModels()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
