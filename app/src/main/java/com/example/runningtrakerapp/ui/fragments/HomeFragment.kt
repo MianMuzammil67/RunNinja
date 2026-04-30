@@ -45,8 +45,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private lateinit var binding: FragmentHomeBinding
     private lateinit var runAdapter: RunAdapter
     private val mainViewModel: MainViewModel by viewModels()
-    private val weeklyGoalViewModel: WeekGoalViewModel by viewModels()
-
+    private val weeklyGoalViewModel: WeekGoalViewModel by activityViewModels()
 
     @RequiresApi(Build.VERSION_CODES.Q)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
